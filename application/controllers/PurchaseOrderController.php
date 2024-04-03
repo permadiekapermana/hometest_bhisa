@@ -17,6 +17,19 @@ class PurchaseOrderController extends CI_Controller {
 
     }
 
+    public function po_detail($po_code) {
+
+        $data['purchase_order'] = $this->PurchaseOrder_model->get_purchase_order_by_id($po_code);
+        $data['purchase_order_items'] = $this->PurchaseOrder_model->get_detail_product_by_id_po($po_code);
+
+        // var_dump($data['purchase_order']);
+
+        // var_dump($data['purchase_order_items']);
+        
+        $this->load->view('view_po_detail', $data);
+
+    }
+
     public function po_add() {
 
         $data['suppliers'] = $this->Supplier_model->get_suppliers();

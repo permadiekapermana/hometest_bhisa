@@ -42,7 +42,9 @@
                                 <td><?= $po->total ?></td>
                                 <td><?= $po->notes ?></td>
                                 <td>
-                                    <button class="btn btn-primary btn-sm" onclick="detailPO('<?php echo (string) $po->id; ?>')">Detail</button>
+                                    <a href="<?= base_url('purchase-orders/detail/' . $po->id) ?>">
+                                        <button class="btn btn-primary btn-sm">Detail</button>
+                                    </a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

@@ -14,4 +14,8 @@ class Dashboard_model extends CI_Model {
     public function get_total_supplier() {
         return $this->db->count_all('ms_suppliers');
     }
+
+    public function get_total_po() {
+        return $this->db->count_all('tr_po');
+    }
 }
