@@ -29,7 +29,7 @@ class Login extends CI_Controller {
             );
 
             $this->session->set_userdata($userdata);
-            redirect('users'); // Redirect to dashboard or any desired page
+            redirect('dashboard'); // Redirect to dashboard or any desired page
         } else {
             // Invalid login
             $this->session->set_flashdata('error', 'Invalid username or password');
