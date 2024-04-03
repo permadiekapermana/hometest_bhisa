@@ -9,6 +9,10 @@ class ProductController extends CI_Controller {
     }
 
     public function index() {
+        if (!$this->session->userdata('logged_in')) {
+            // Redirect to login page
+            redirect('login');
+        }
         $data['products'] = $this->Product_model->get_products();
         $this->load->view('view_products', $data);
     }
