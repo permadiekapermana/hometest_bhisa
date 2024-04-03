@@ -80,3 +80,4 @@ $route['supplier/delete/(:any)'] = 'SupplierController/delete_supplier/$1';
 // Purchase Order Route
 $route['purchase-orders/add'] = 'PurchaseOrderController/po_add';
 $route['purchase-orders/save'] = 'PurchaseOrderController/po_save';
+$route['purchase-orders'] = 'PurchaseOrderController/index';

@@ -7,6 +7,14 @@ class PurchaseOrderController extends CI_Controller {
         parent::__construct();
         $this->load->model('Supplier_model');
         $this->load->model('Product_model');
+        $this->load->model('PurchaseOrder_model');
+    }
+
+    public function index() {
+
+        $data['purchase_orders'] = $this->PurchaseOrder_model->get_purchase_orders();
+        $this->load->view('view_po', $data);
+
     }
 
     public function po_add() {
