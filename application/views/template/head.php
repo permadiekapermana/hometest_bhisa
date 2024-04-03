@@ -27,6 +27,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link href="<?= base_url('assets/css/sb-admin-2.min.css') ?>" rel="stylesheet">
     <!-- DataTables CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <!-- Favicon -->
+    <!-- For browsers which support multiple icon formats -->
+    <link rel="icon" href="<?= base_url('assets/img/logo-bhinneka.png') ?>" type="image/png">
 
 </head>
 
