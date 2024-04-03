@@ -16,7 +16,7 @@ class DashboardController extends CI_Controller {
         }
 
         $data['total_products'] = $this->Dashboard_model->get_total_product();
-        $data['total_orders'] = $this->Dashboard_model->get_total_user();
+        $data['total_users'] = $this->Dashboard_model->get_total_user();
         $data['total_suppliers'] = $this->Dashboard_model->get_total_supplier();
         
         $this->load->view('view_dashboard', $data);

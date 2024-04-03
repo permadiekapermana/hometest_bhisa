@@ -76,3 +76,7 @@ $route['supplier/add'] = 'SupplierController/add_supplier';
 $route['supplier/edit/(:any)'] = 'SupplierController/edit_supplier/$1';
 $route['supplier/update'] = 'SupplierController/update_supplier';
 $route['supplier/delete/(:any)'] = 'SupplierController/delete_supplier/$1';
+
+// Purchase Order Route
+$route['purchase-orders/add'] = 'PurchaseOrderController/po_add';
+$route['purchase-orders/save'] = 'PurchaseOrderController/po_save';
