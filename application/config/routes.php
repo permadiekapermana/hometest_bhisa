@@ -66,3 +66,10 @@ $route['product/add'] = 'ProductController/add_product';
 $route['product/edit/(:any)'] = 'ProductController/edit_product/$1';
 $route['product/update'] = 'ProductController/update_product';
 $route['product/delete/(:any)'] = 'ProductController/delete_product/$1';
+
+// Supplier Route
+$route['suppliers'] = 'SupplierController/index';
+$route['supplier/add'] = 'SupplierController/add_supplier';
+$route['supplier/edit/(:any)'] = 'SupplierController/edit_supplier/$1';
+$route['supplier/update'] = 'SupplierController/update_supplier';
+$route['supplier/delete/(:any)'] = 'SupplierController/delete_supplier/$1';
